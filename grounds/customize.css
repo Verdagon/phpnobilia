@@ -1,0 +1,204 @@
+.Str { color: #FF0000; }
+.Sta { color: #FF8000; }
+.Dex { color: #40FF40; }
+.Agl { color: #FFFF00; }
+.Intel { color: #8080FF; }
+.Spir { color: #FF00FF; }
+.Name {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.HalfShadowed {
+	background-image: url("images/Shadow50.png");
+}
+.SlightlyShadowed {
+	background-image: url("images/Shadow20.png");
+}
+
+.RightLabel {
+	padding: 0 0.5em;
+	float: right;
+	clear: right;
+	background-image: url("images/Shadow20.png");
+}
+
+.RightButton {
+	padding: 0 0.5em;
+	float: right;
+	clear: right;
+	background-image: url("images/Shadow20.png");
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	margin-left: 0.25em;
+	padding: 0.25em;
+}
+.RightButton:hover {
+	background-image: url("images/Shadow50.png");
+}
+
+.RightButton + .RightButton {
+	margin-top: auto;
+}
+
+.LeftButton {
+	padding: 0 0.5em;
+	float: left;
+	clear: left;
+	background-image: url("images/Shadow20.png");
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	padding: 0.25em;
+}
+.LeftButton:hover {
+	background-image: url("images/Shadow50.png");
+}
+
+.LeftButton + .LeftButton {
+	margin-top: auto;
+}
+
+#mainColumn a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+.UnitThumbContainer {
+	padding-left: 1%;
+	width: 31.333%;
+	padding-right: 1%;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.UnitThumb {
+	border: 2px solid #FFFFFF;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	background-color: #329232;
+	background-image: url("images/CardBackground.png");
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	display: block;
+	text-decoration: none;
+}
+.UnitThumb:hover {
+	background-position: top left;
+}
+
+.UnitThumb.Unrecruited {
+	background-image: url("images/CardBackgroundUnrecruited.png");
+	opacity: .8;
+	border-color: #808080;
+}
+
+.UnitThumb .UnrecruitedLabel {
+	display: none;
+}
+.UnitThumb.Unrecruited .UnrecruitedLabel {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -7%;
+	width: 70%;
+	max-width: 128px;
+	
+}
+.UnitThumb .UnitImage {
+	width: 70%;
+	max-width: 128px;
+	position: absolute;
+	top: 0;
+	left: -7%;
+}
+.UnitThumb .Cost {
+	display: none;
+}
+.UnitThumb.Unrecruited .Cost {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #C0C0C0;
+	padding: 4px 0.5em;
+	border: 2px solid #C0C0C0;
+	border-width: 1px 1px 0 0;
+}
+.UnitThumb .RightColumn {
+	overflow: hidden;
+	text-align: right;
+	float: right;
+}
+
+.UnitView {
+	border: 2px solid #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	background: url("images/CardBackground.png") #329232 repeat-x bottom left;
+}
+
+.UnitView .UnitImage {
+	width: 70%;
+	max-width: 128px;
+	float: left;
+	clear: left;
+}
+
+.UnitView.Flying .RightColumn {
+	overflow: hidden;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.UnitView .ExtraText {
+	font-size: 90%;
+}
+
+.UnitView .RightColumn {
+	float: right;
+	overflow: hidden;
+}
+.UnitView .AlignmentWheel {
+	float: left;
+	clear: left;
+	text-align: center;
+}
+.UnitView .AlignmentWheel img {
+	width: 128px;
+}
+
+
+
+.Modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.Modal .ModalWindow {
+	margin-top: 3em auto 0;
+	background: url("images/CardBackground.png") #003000 repeat-x top left;
+	border: 2px solid #FFFFFF;
+	overflow: auto;
+	padding: 0.5em;
+}
+
+.Modal .ModalWindow.Small {
+	float: right;
+}
+
+.Trainer .Buttons {
+	float: left;
+	overflow: auto;
+	margin-right: 0.5em;
+}
+
+.Trainer .Description {
+	padding-top: 0.5em;
+}

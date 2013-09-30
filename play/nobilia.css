@@ -1,0 +1,250 @@
+body {
+	background-color: #000000;
+	font-family: arial, tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+	overflow: scroll;
+}
+
+a {
+	color: #00FF00;
+}
+
+#mapArea {
+	/*position: absolute;
+	top: 120px;
+	width: 100%;*/
+}
+
+#tileLayer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#tileTextLayer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#mouseLayer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+}
+
+a.OsmBox, a.OsmBoxChecked {
+	padding-left: 2px;
+	padding-right: 2px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.OsmBox {
+	border: 2px solid #0000C0;
+	background-color: #000060;
+}
+
+a.OsmBox:hover {
+	border: 2px solid #4040FF;
+	background-color: #303090;
+}
+
+a.OsmBoxChecked {
+	border: 2px solid #008000;
+	background-color: #004000;
+}
+
+a.OsmBoxChecked:hover {
+	border: 2px solid #40C040;
+	background-color: #208020;
+}
+
+/*#viewMenu {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 24px;
+	position: fixed;
+	left: 35%;
+	top: 40%;
+	right: 35%;
+	
+	color: #FFFFFF;
+	padding: 5px;
+	z-index: 10002;
+	background-color: #000000;
+	border: 2px solid #FFFFFF;
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+
+#viewMenu #title {
+	font-weight: bold;
+}
+
+#viewMenu * {
+	vertical-align: middle;
+}
+
+#viewMenu select {
+	height: 1.2em;
+	border: 0;
+	font-size: .8em;
+	background-color: #004000;
+	color: #FFFFFF;
+}*/
+
+#alert {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 24px;
+	position: fixed;
+	left: 5px;
+	bottom: 5px;
+	right: 65%;
+	
+	color: #FFFFFF;
+	padding: 5px;
+	z-index: 10004;
+	background-color: #300000;
+	border: 2px solid #FF8080;
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+
+#panel .Section table {
+	border-collapse: collapse;
+	font-size: inherit;
+	margin-top: 5px;
+}
+
+#panel .Section table td,
+#panel .Section table th {
+	border: 1px solid #404040;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#panel .Section table th {
+	background-color: #202020;
+}
+
+#panel {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	z-index: 10003;
+	height: 100px; /* add 20 to this to get the mapArea offset. */
+}
+
+#panel .Section {
+	background-color: #000000;
+	border: 2px solid #808080;
+	padding: 5px;
+	margin-left: 5px;
+	float: right;
+}
+
+#panel #gamePanel {
+	width: 250px;
+}
+
+#panel #unitPanel #unitPanelName {
+	text-align: center;
+	font-weight: bold;
+}
+
+#panel #unitPanel table * {
+	text-align: center;
+}
+
+#panel #unitPanel a#unitPanelDetails {
+	display: block;
+	text-align: center;
+	margin-top: 3px;
+	border: 1px solid #404040;
+	background-color: #202020;
+	padding: 1px;
+}
+
+#panel #unitPanel a#unitPanelDetails:hover {
+	border: 1px solid #606060;
+	background-color: #404040;
+}
+
+#panel #tilePanel {
+	width: 150px;
+}
+
+#panel #turnIndicator {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#panel a.LeftButton,
+#panel a.RightButton {
+	border: 1px solid #404040;
+	background-color: #202020;
+	padding: 3px;
+	float: right;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+
+#panel a.LeftButton {
+	float: left;
+}
+
+#panel a.LeftButton:hover,
+#panel a.RightButton:hover {
+	border: 1px solid #606060;
+	background-color: #404040;
+}
+
+.Tile {
+	text-align: center;
+}
+
+.PlayerTextBlack {
+	font-weight: bold;
+	font-family: Arial;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline;
+	background-color: #000000;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+.PlayerTextBlue {
+	font-weight: bold;
+	font-family: Arial, Arial;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline;
+	background-color: #000080;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+.PlayerTextRed {
+	font-weight: bold;
+	font-family: Arial, Arial;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline;
+	background-color: #800000;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
